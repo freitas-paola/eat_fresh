@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eat Fresh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="navbar navbar-expand-lg sticky-top">
+          <h1>Eat Fresh</h1>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+          >
+            <span class="navbar-toggler-icon navbar-dark"></span>
+          </button>
+          <nav id="menu" class="collapse navbar-collapse justify-content-end">
+            <ul class="nav nav-pills navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#inicio">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#planos">Planos</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal"
+                  >Faça seu Pedido</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section id="inicio">
+      <div class="container">
+        <h2>Receba frutas e verduras frescas no conforto da sua casa!</h2>
+        <div id="carousel-eg" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+              <img class="d-block w-100" src="./imgs/img1.png" alt="" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./imgs/img2.png" alt="" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./imgs/img3.png" alt="" />
+            </div>
+          </div>
+          <button
+            data-bs-target="#carousel-eg"
+            data-bs-slide="prev"
+            class="carousel-control-prev"
+            type="button"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            data-bs-target="#carousel-eg"
+            data-bs-slide="next"
+            class="carousel-control-next"
+            type="button"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+          <div class="carousel-indicators">
+            <button
+              class="active"
+              type="button"
+              data-bs-target="#carousel-eg"
+              data-bs-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-eg"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-eg"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="planos">
+      <div class="container">
+        <h3>Planos</h3>
+        <div class="row">
+          <div class="plano-card col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Plano Básico</h4>
+                <h5 class="card-subtitle">Mensal</h5>
+                <div class="card-text">
+                  <ul>
+                    <li>
+                      <ion-icon class="checkmark" name="checkmark"></ion-icon>4
+                      tipos de frutas
+                    </li>
+                    <li>
+                      <ion-icon class="checkmark" name="checkmark"></ion-icon>4
+                      tipos de legumes
+                    </li>
+                    <li>
+                      <ion-icon class="checkmark" name="checkmark"></ion-icon>4
+                      tipos de verduras
+                    </li>
+                    <li>
+                      <ion-icon class="checkmark" name="checkmark"></ion-icon
+                      >Frete Grátis
+                    </li>
+                  </ul>
+                </div>
+                <p class="card-text price">R$ 150,00</p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal"
+                  >Faça seu Pedido</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="plano-card col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Plano Especial</h4>
+                <h5 class="card-subtitle">Semanal</h5>
+                <div class="card-text">
+                  <ul>
+                    <li>
+                      <ion-icon class="checkmark" name="checkmark"></ion-icon>2
+                      tipos de frutas
+                    </li>
+                    <li>
+                      <ion-icon class="checkmark" name="checkmark"></ion-icon>2
+                      tipos de legumes
+                    </li>
+                    <li>
+                      <ion-icon class="checkmark" name="checkmark"></ion-icon>2
+                      tipos de verduras
+                    </li>
+                    <li>
+                      <ion-icon class="checkmark" name="checkmark"></ion-icon
+                      >Frete Grátis
+                    </li>
+                  </ul>
+                </div>
+                <p class="card-text price">R$ 250,00</p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal"
+                  >Faça seu Pedido</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="plano-card col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Plano Premium</h4>
+                <h5 class="card-subtitle">Semanal</h5>
+                <div class="card-text">
+                  <ul>
+                    <li>
+                      <ion-icon class="checkmark" name="checkmark"></ion-icon>4
+                      tipos de frutas
+                    </li>
+                    <li>
+                      <ion-icon class="checkmark" name="checkmark"></ion-icon>4
+                      tipos de legumes
+                    </li>
+                    <li>
+                      <ion-icon class="checkmark" name="checkmark"></ion-icon>4
+                      tipos de verduras
+                    </li>
+                    <li>
+                      <ion-icon class="checkmark" name="checkmark"></ion-icon
+                      >Frete Grátis
+                    </li>
+                  </ul>
+                </div>
+                <p class="card-text price">R$ 400,00</p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal"
+                  >Faça seu Pedido</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="modal" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Faça seu Pedido</h5>
+            <button
+              data-bs-dismiss="modal"
+              class="btn-close"
+              type="button"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <label class="form-label" for="nome">Seu nome:</label>
+              <input class="form-control" type="text" id="nome" />
+              <label class="form-label" for="email">Seu email:</label>
+              <input class="form-control" type="email" id="email" />
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              data-bs-dismiss="modal"
+              type="button"
+              class="btn btn-danger"
+            >
+              Cancelar
+            </button>
+            <button
+              data-bs-dismiss="modal"
+              type="submit"
+              class="btn btn-success"
+            >
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
